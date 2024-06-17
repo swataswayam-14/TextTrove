@@ -25,26 +25,21 @@ Building and Running
 
 4. Run the program:
     ```bash
-   cargo run -- to <file_name>.txt
-
+   cargo run <file_name>.txt
 
 Usage 
 ------
 
 To use the program, you need to provide the path to the file you want to search and the text you want to search for. You can also specify whether the search should be case-sensitive or case-insensitive by setting the IGNORED_CASE environment variable.
-    ```bash
-    IGNORED_CASE = 1 cargo run -- to <file_name>.txt
-
-
+```bash
+IGNORED_CASE=1 cargo run <file_name>.txt
 
 Testing
 --------
 
 The program has been thoroughly tested using Rust's built-in testing framework. You can run the tests using the following command:
-
-    ```bash
-    cargo test
-
+```bash
+cargo test
 
 Contributing
 -------------
