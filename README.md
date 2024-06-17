@@ -13,33 +13,40 @@ Building and Running
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/text-search.git
+   git clone https://github.com/swataswayam-14/TextTrove
 
 2. Navigate to the project directory:
-    ```bash
-   cd text-search
+   ```bash
+   cd text-trove
 
 3. Build the program:
-    ```bash
+   ```bash
    cargo build
 
-4. Run the program:
-    ```bash
-   cargo run <file_name>.txt
+4. Run the program: 
+   ```bash
+   cargo run -- <query_string> <file_name>.txt
 
-Usage 
+
+Usage
 ------
 
-To use the program, you need to provide the path to the file you want to search and the text you want to search for. You can also specify whether the search should be case-sensitive or case-insensitive by setting the IGNORED_CASE environment variable.
-```bash
-IGNORED_CASE=1 cargo run <file_name>.txt
+To use the program, you need to provide the path to the file you want to search and the text you want to search for. You can also specify whether the search should be case-sensitive or case-insensitive by setting the IGNORE_CASE environment variable.
+
+1. Run the program: 
+   ```rust
+   IGNORE_CASE=1 cargo run -- <query_string> <file_name>.txt
+
 
 Testing
 --------
 
-The program has been thoroughly tested using Rust's built-in testing framework. You can run the tests using the following command:
-```bash
-cargo test
+The program has been thoroughly tested using Rust’s built-in testing framework. You can run the tests using the following command:
+
+1. Run tests:
+   ```bash
+   cargo test
+
 
 Contributing
 -------------
